@@ -2,6 +2,7 @@
 首先感谢原作者！
 
 为了解决ios原生键盘输入获取字母问题，新增一个 getFreshHtml 方法，通过$refs.[refName].getFreshHtml() 获取ios原生键盘的输入，防止获取字母。
+另外提供了基于bit的新仓库。
 
 # 简介 Intro 
 
@@ -15,11 +16,12 @@ Vue-html5-editor is an html5 wysiwyg editor for vue,easy and flexible,compatible
 
 # 安装 Installation
 
-### Npm
+### Yarn
 
 
 ```bash
-npm install vue-html5-editor --save-dev
+yarn config set '@bit:registry' https://node.bitsrc.io
+yarn add @bit/raiyeeeric.easyhi.util.html-editor
 ```
 
 引入并安装作为全局组件
@@ -28,7 +30,7 @@ import and install as global component
 
 ```js
 import Vue from 'vue'
-import VueHtml5Editor from 'vue-html5-editor'
+import VueHtml5Editor from '@bit/raiyeeeric.easyhi.util.html-editor'
 Vue.use(VueHtml5Editor,options);
 ```
 
